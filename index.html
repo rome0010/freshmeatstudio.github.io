@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshmeat Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <h2 class="logo">Fresh Meat Studio</h2>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+    <a href="#home" onclick="closeMenu()" class="nav-link">
+        <img src="icon/Home.png" alt="Home Icon" class="nav-icon">
+    </a>
+    <a href="#about" onclick="closeMenu()" class="nav-link">
+        <img src="icon/face.svg" alt="About Icon" class="nav-icon">
+    </a>
+    <a href="#projects" onclick="closeMenu()" class="nav-link">
+        <img src="icon/psp.png" alt="Projects Icon" class="nav-icon">
+    </a>
+    <a href="#contact" onclick="closeMenu()" class="nav-link">
+        <img src="icon/contact.png" alt="Contact Icon" class="nav-icon">
+    </a>
+</nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <img src="Logo/FRESH__1_-removebg-preview.png" alt="Fresh Meat Studio Logo" class="hero-logo">
+
+         <div class="floating-icon floating-icon-1"></div>
+    <div class="floating-icon floating-icon-1" style="background-image: url('icon/hook6.png');"></div>
+    <div class="floating-icon floating-icon-2" style="background-image: url('icon/hook2.png');"></div>
+    <div class="floating-icon floating-icon-3" style="background-image: url('icon/Game.png');"></div>
+      <div class="floating-icon floating-icon-4" style="background-image: url('icon/hook5.png');"></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-container">
+            <img src="Picture/pic4.jpg" alt="Jerome Fabella" class="my-img">
+            <div class="about-info">
+                <p><strong>Name:</strong> Jerome Maghanoy Fabella</p>
+                <p><strong>School:</strong> Bicol State College of Applied Sciences and Technology</p>
+                <p><strong>Course:</strong> Bachelor of Science Entertainment Multimedia and Computing - Major in Game Development</p>
+                <p><strong>Year:</strong> 4th Year College</p>
+                <p><strong>Age:</strong> 23 years old</p>
+                <p><strong>Birthdate:</strong> January 10, 2002</p>
+            </div>
+        </div>
+
+
+       <!-- Achievements -->
+        <div class="achievements">
+            <h2>ACHIEVEMENTS</h2>
+            
+            <div class="achievement-item">
+                <div class="achievement-image">
+                    <img src="Logo/RegularGameDevMythdefenderCoverArt1.png" alt="Myth Defender">
+                </div>
+                <div class="achievement-content">
+                    <h3>Myth Defender</h3>
+                    <p>Rank 5 - Bicol Mythic Game Jam (Solo Team)</p>
+                    <a href="Cert/GAME JAM CERTIFICATES-Fabella.pdf" target="_blank">
+    <button class="view-cert-btn">View Certificate</button>
+</a>
+
+                </div>
+            </div>
+            
+            <div class="achievement-item">
+                <div class="achievement-image">
+                    <img src="Logo/ANURA DEFENSE.png" alt="Anura Defender">
+                </div>
+                <div class="achievement-content">
+                    <h3>Anura Defender</h3>
+                    <p>Top 12 - Finalist Globe Go Gaming (Solo Team)</p>
+                    <a href="Cert/[Castle of Secrets] GH GoGAMING S2 - Certificate of Participation_Signed.pdf" target="_blank">
+    <button class="view-cert-btn">View Certificate</button>
+</a>
+                </div>
+            </div>
+            
+            <div class="achievement-item">
+                <div class="achievement-image">
+                    <img src="Logo/Castle.jpg" alt="Castle of Secrets">
+                </div>
+                <div class="achievement-content">
+                    <h3>Castle of Secrets</h3>
+                    <p>Top 12 - Finalist Globe Go Gaming (Solo Team)</p>
+                    <button class="view-cert-btn" onclick="window.open('certificate3.pdf', '_blank')">View Certificate</button>
+                </div>
+            </div>
+            
+            <div class="achievement-item">
+                <div class="achievement-image">
+                    <img src="Logo/MangpapatoPoster.png" alt="Mangpapato">
+                </div>
+                <div class="achievement-content">
+                    <h3>Mangpapato</h3>
+                    <p>Top 30 Semi Finalist - Young Creative Challenge 2024 (Group Team)<br>
+                    <span class="role">Role: Sound Designer</span></p>
+                    <button class="view-cert-btn" onclick="window.open('https://www.facebook.com/photo.php?fbid=537799319365182&set=pb.100094053565669.-2207520000&type=3', '_blank')">View Link</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+    <div class="project-cards">
+        <div class="card">
+            <img src="Logo/3.png" alt="Myth Defender Poster">
+            <div class="card-content">
+                <h3>Myth Defender</h3>
+                <p>Myth Defender is a 2D platform action-defense game where you protect your castle from waves of mythical creatures drawn from Bicol folklore. Armed with a magical hook, you must pull and defeat enemies before they reach your base.</p>
+                <button class="view-cert-btn" onclick="window.open('https://drive.google.com/drive/folders/1_OKYl2z71TWB-5VCBn4yx1gIq_fynug1?usp=drive_link')">Download Game</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Logo/Game (1).png" alt="Castle of Secret Poster">
+            
+            <div class="card-content">
+                <h3>Castle of Secret</h3>
+                <p>Castle of Secrets is a mobile card guessing game with 5 cards per row. Your goal is to find and guess the locations of the two special cards: the Key and the Door, in order to move to the next row above</p>
+                <button class="view-cert-btn"
+        onclick="window.open('https://drive.google.com/file/d/1qS9pPvEozfeqETDNZJKN31GwhQr4TCnV/view')">
+    Download Game
+</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Logo/Game2.png" alt="Hook Firee Poster">
+            <div class="card-content">
+                <h3>Hook Fireee</h3>
+                <p>More exciting games are on the way. Stay tuned for new adventures!</p>
+                <button class="view-cert-btn" onclick="window.open('https://drive.google.com/drive/folders/1rSsHmbEfvvU5jAXRj0Q-tv9Ri9ex4A9a?usp=drive_link')">Download Game</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Logo/Picsart_25-06-02_00-36-51-145.jpg" alt="Saving Princess Poster">
+            <div class="card-content">
+                <h3>Saving Princess</h3>
+                <p>Saving the Princess is a 3D action adventure game where you use a grappling hook to swing across towering buildings while being chased by armed robot enemies. </p>
+                <button class="view-cert-btn" onclick="window.open('https://drive.google.com/drive/folders/1kahRZNjySITVTLaGk7nHoK0bpqPuwh4e?usp=drive_link')">Download Game</button>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- CONTACT SECTION -->
+    <!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <h1>Contact</h1>
+    <p>
+        <img src="icon/email.png" alt="Email" class="contact-icon">
+        fabellajerome52@gmail.com
+    </p>
+    <p>
+        <img src="icon/Phone1.svg" alt="Phone" class="contact-icon">
+        +639924798272
+    </p>
+    <p>
+        <img src="icon/Fb.svg" alt="Facebook" class="contact-icon">
+        JeRome Jmf Fabella
+    </p>
+</section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
