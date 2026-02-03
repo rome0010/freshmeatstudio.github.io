@@ -376,8 +376,13 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
 
 .achievement-content {
     flex: 1;
+    outline: none;
+    
 }
-
+.achievement-content a {
+    text-decoration: none;
+    display: inline-block;
+}
 .achievement-content h3 {
     font-size: 1.6rem;
     font-weight: bold;
@@ -413,6 +418,8 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
+    outline: none;
+    margin: 5px;
 }
 
 .view-cert-btn:hover {
@@ -427,8 +434,16 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
-    .header { padding: 15px 20px; }
-    .logo { font-size: 20px; }
+    .header { 
+        padding: 15px 20px; 
+    }
+    
+    .logo { 
+        font-size: 20px;
+        z-index: 1002;
+        position: relative;
+    }
+    
     nav {
         position: fixed;
         top: 60px;
@@ -441,35 +456,83 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
         gap: 30px;
         transition: left 0.3s ease;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        z-index: 999;
     }
-    nav.active { left: 0; }
-    nav a { font-size: 20px; text-align: center; }
-    .hamburger { display: flex; }
-    .hero { padding: 40px 20px; min-height: 300px; }
-    .hero h1 { font-size: 32px; }
-    .hero-logo { width: 280px; }
-    section { padding: 40px 10px; }
-    .about, .projects, .contact { margin: 15px 10px; padding: 25px 20px; }
-    h1 { font-size: 28px; margin-bottom: 20px; }
-    .about p { font-size: 16px; }
-    .project-cards { grid-template-columns: 1fr; gap: 20px; }
-    .card { padding: 25px; }
-    .card h3 { font-size: 20px; }
-    .contact p { font-size: 16px; }
+    
+    nav.active { 
+        left: 0; 
+    }
+    
+    nav a { 
+        font-size: 20px; 
+        text-align: center; 
+    }
+    
+    .hamburger { 
+        display: flex; 
+    }
+    
+    .hero { 
+        padding: 40px 20px; 
+        min-height: 300px; 
+    }
+    
+    .hero h1 { 
+        font-size: 32px; 
+    }
+    
+    .hero-logo { 
+        width: 280px; 
+    }
+    
+    section { 
+        padding: 40px 10px; 
+    }
+    
+    .about, .projects, .contact { 
+        margin: 15px 10px; 
+        padding: 25px 20px; 
+    }
+    
+    h1 { 
+        font-size: 28px; 
+        margin-bottom: 20px; 
+    }
+    
+    .about p { 
+        font-size: 16px; 
+    }
+    
+    .project-cards { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+    
+    .card { 
+        padding: 25px; 
+    }
+    
+    .card h3 { 
+        font-size: 20px; 
+    }
+    
+    .contact p { 
+        font-size: 16px; 
+    }
     
     /* Achievements Mobile */
     .achievements {
         max-width: 1200px;
-    margin: 80px auto 0;
+        margin: 80px auto 0;
     }
 
     .achievements h2 {
         font-size: 1.5rem;
         margin-bottom: 30px;
         text-align: center;
-    color: #0d3320;
-    text-shadow: 2px 2px 0px #2ecc71;
-    letter-spacing: 3px;
+        color: #0d3320;
+        text-shadow: 2px 2px 0px #2ecc71;
+        letter-spacing: 3px;
     }
 
     .achievement-item {
@@ -497,9 +560,10 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
         width: 100%;
         padding: 14px 20px;
         font-size: 0.95rem;
+        border: none;
+        outline: none;
     }
 }
-
 @media (max-width: 480px) {
     .header { padding: 12px 15px; }
     .logo { font-size: 18px; }
@@ -523,6 +587,8 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
     .view-cert-btn {
         padding: 12px 20px;
         font-size: 0.9rem;
+        border: none;
+    outline: none;
     }
 }
 .project-title-image {
