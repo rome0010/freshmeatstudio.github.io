@@ -1,4 +1,6 @@
 /* RESET & GLOBAL */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -284,6 +286,7 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
 /* CONTACT ICONS */
 .contact-icon { width: 20px; height: 20px; vertical-align: middle; margin-right: 10px; filter: drop-shadow(0 0 6px #00C853); transition: transform 0.3s, filter 0.3s; }
 .contact-icon:hover { transform: scale(1.2); filter: drop-shadow(0 0 12px #00C853); }
+
 
 .my-img{
     width: 500px;
@@ -623,4 +626,22 @@ project-bg-image1 {
     object-fit: cover;
     z-index: 1;
     transition: transform 0.3s ease;
+}
+ .resume-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2ecc71; /* green */
+    color: rgb(228, 249, 0);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 15px;
+    
+
+}
+
+.resume-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
 }
