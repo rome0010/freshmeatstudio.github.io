@@ -23,4 +23,6 @@ document.addEventListener('click', function(event) {
     if (!header.contains(event.target) && nav.classList.contains('active')) {
         closeMenu();
     }
+
+    
 });

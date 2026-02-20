@@ -16,18 +16,35 @@
             <span></span>
             <span></span>
         </div>
-        <nav id="nav">
-    <a href="#home" onclick="closeMenu()" class="nav-link">
-        <img src="icon/Home.png" alt="Home Icon" class="nav-icon">
+      
+    <nav id="nav">
+    <a href="#home" onclick="closeMenu()" class="nav-link nav-3d-btn" title="Home">
+        <span class="nav-3d-face">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </span>
     </a>
-    <a href="#about" onclick="closeMenu()" class="nav-link">
-        <img src="icon/face.svg" alt="About Icon" class="nav-icon">
+    <a href="#about" onclick="closeMenu()" class="nav-link nav-3d-btn" title="About">
+        <span class="nav-3d-face">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+            </svg>
+        </span>
     </a>
-    <a href="#projects" onclick="closeMenu()" class="nav-link">
-        <img src="icon/psp.png" alt="Projects Icon" class="nav-icon">
+    <a href="#projects" onclick="closeMenu()" class="nav-link nav-3d-btn" title="Projects">
+        <span class="nav-3d-face">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5S14.67 12 15.5 12s1.5.67 1.5 1.5S16.33 15 15.5 15zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 10 18.5 10s1.5.67 1.5 1.5S19.33 12 18.5 12z"/>
+            </svg>
+        </span>
     </a>
-    <a href="#contact" onclick="closeMenu()" class="nav-link">
-        <img src="icon/contact.png" alt="Contact Icon" class="nav-icon">
+    <a href="#contact" onclick="closeMenu()" class="nav-link nav-3d-btn" title="Contact">
+        <span class="nav-3d-face">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+        </span>
     </a>
 </nav>
 
@@ -35,7 +52,7 @@
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
-        <img src="Logo/FRESH__1_-removebg-preview.png" alt="Fresh Meat Studio Logo" class="hero-logo">
+        <img src="Logo/FRESHMEAT LOGO.png" alt="Fresh Meat Studio Logo" class="hero-logo">
 
          <div class="floating-icon floating-icon-1"></div>
     <div class="floating-icon floating-icon-1" style="background-image: url('icon/hook6.png');"></div>
@@ -193,22 +210,44 @@
 
         <!-- CONTACT SECTION -->
         <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-        <h1>Contact</h1>
-        <p>
-            <img src="icon/email.png" alt="Email" class="contact-icon">
-            fabellajerome52@gmail.com
-        </p>
-        <p>
-            <img src="icon/Phone1.svg" alt="Phone" class="contact-icon">
-            +639924798272
-        </p>
-        <p>
-            <img src="icon/Fb.svg" alt="Facebook" class="contact-icon">
-            JeRome Jmf Fabella
-        </p>
-   
+<section class="contact" id="contact">
+    <h1>Contact</h1>
+    <div class="contact-container">
 
+        <!-- EMAIL -->
+        <a href="mailto:fabellajerome52@email.com" class="icon-3d email">
+            <span class="icon-logo">
+                <img src="icon/email.png" alt="Email">
+            </span>
+            <span class="tooltip">fabellajerome52@email.com</span>
+        </a>
+
+        <!-- FACEBOOK -->
+        <a href="https://www.facebook.com/jerome.fabella.9" target="_blank" class="icon-3d facebook">
+            <span class="icon-logo">
+                <img src="icon/facebook.png" alt="Facebook">
+            </span>
+            <span class="tooltip">JeRome Jmf Fabella</span>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/emorej.x_x" target="_blank" class="icon-3d instagram">
+            <span class="icon-logo">
+                <img src="icon/instagram.png" alt="Instagram">
+            </span>
+            <span class="tooltip">emorej.x_x</span>
+        </a>
+
+        <!-- PHONE -->
+        <a href="tel:+639924798272" class="icon-3d phone">
+            <span class="icon-logo">
+                <img src="icon/phone-call.png" alt="Phone">
+            </span>
+            <span class="tooltip">+639924798272</span>
+        </a>
+
+    </div>
+</section>
     
 
     </section>

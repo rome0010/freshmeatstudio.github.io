@@ -449,10 +449,10 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
     
     nav {
         position: fixed;
-        top: 60px;
+        top: 56px;
         left: -100%;
-        width: 100%;
-        height: calc(100vh - 60px);
+        width: 20%;
+        height: calc(100vh - 50px);
         background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
         flex-direction: column;
         padding: 40px 20px;
@@ -495,6 +495,7 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
     .about, .projects, .contact { 
         margin: 15px 10px; 
         padding: 25px 20px; 
+       
     }
     
     h1 { 
@@ -644,4 +645,295 @@ project-bg-image1 {
 .resume-btn:hover {
     background-color: #27ae60;
     transform: scale(1.05);
+}
+
+/* ===================== */
+/* 3D NAV BUTTONS        */
+/* ===================== */
+.nav-3d-btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px !important;
+    background: linear-gradient(145deg, #3ddc84, #27ae60) !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateX(0deg);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow:
+        0 8px 0 #1a7a42,
+        0 10px 6px rgba(0,0,0,0.35);
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-3d-btn .nav-3d-face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: relative;
+    z-index: 2;
+    border-radius: 14px;
+    transition: transform 0.2s;
+}
+
+.nav-3d-btn .nav-3d-face svg {
+    width: 22px;
+    height: 22px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+    transition: all 0.2s;
+}
+
+.nav-3d-btn:hover {
+    transform: perspective(600px) translateY(-4px);
+    box-shadow:
+        0 12px 0 #1a7a42,
+        0 14px 8px rgba(0,0,0,0.35);
+    background: linear-gradient(145deg, #4aeea0, #2ecc71) !important;
+}
+
+.nav-3d-btn:hover .nav-3d-face svg {
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+    transform: scale(1.15);
+}
+
+.nav-3d-btn:active {
+    transform: perspective(600px) translateY(4px);
+    box-shadow:
+        0 2px 0 #1a7a42,
+        0 3px 4px rgba(0,0,0,0.3);
+    transition: all 0.05s;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    perspective: 1500px;
+    padding: 50px;
+
+}
+
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotateX(35deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+}
+
+
+/* ===================== */
+/* 3D CONTACT SECTION    */
+/* ===================== */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    perspective: 1500px;
+    padding: 10px 0 100px 0;
+    
+}
+
+.icon-3d {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #a8e6cf;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotateX(35deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+
+}
+
+.icon-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Counter-rotate para magmukhang flat ang icon sa loob */
+    transform: rotateZ(-45deg) rotateX(0deg);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* 3D Sides */
+.icon-3d::before, .icon-3d::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: inherit;
+}
+
+.icon-3d::before { transform: translateZ(-30px); filter: brightness(0.7); }
+.icon-3d::after { transform: translateZ(-15px); filter: brightness(0.85); }
+
+/* Hover States */
+.icon-3d:hover {
+    transform: rotateX(35deg) rotateZ(45deg) translateZ(50px) translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Palitan ang mga ito para tumugma sa bagong HTML classes mo */
+
+.email:hover { 
+    background: #ff2f1c; /* Google/Email Red */
+}
+
+.facebook:hover { 
+    background: #1877f2; /* Facebook Blue */
+}
+
+.instagram:hover { 
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Instagram Gradient */
+}
+
+.phone:hover { 
+    background: #34a853; /* WhatsApp/Phone Green */
+}
+.icon-3d:hover .icon-logo img {
+    filter: brightness(0) invert(1);
+}
+
+.icon-3d:active {
+    transform: rotateX(35deg) rotateZ(45deg) translateZ(20px);
+}
+
+/* Mobile Fix for Contact */
+@media (max-width: 768px) {
+    
+    .icon-3d {
+        width: 80px;
+        height: 80px;
+    }
+    .icon-logo img {
+        width: 40px;
+        height: 40px;
+    }
+ 
+}
+
+/* --- TOOLTIP STYLE --- */
+.tooltip {
+    position: absolute;
+    top: 100%;              /* Ilagay sa ilalim ng icon */
+    left: 40%;              /* Simulan sa gitna */
+    transform: translateX(-40%) translateY(15px); /* Perfect center + konting baba */
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+/* Pag ni-hover ang icon, lalabas ang text */
+/* Pag ni-hover ang icon-3d, lalabas ang tooltip sa loob nito */
+.icon-3d:hover .tooltip {
+    opacity: 1;
+    /* Panatilihin ang counter-rotate para diretso ang text */
+    transform: rotateZ(-45deg) rotateX(-40deg) translateY(0);
+}
+
+/* Container Settings */
+#nav {
+    display: flex;
+    gap: 25px;
+    perspective: 1000px;
+}
+
+/* Ang 3D Box ng Nav */
+.nav-box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(55deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Counter-rotate para sa PNG sa loob */
+.nav-box .icon-logo {
+    display: flex;
+    transform: rotateZ(-45deg) rotateX(-55deg);
+}
+
+.nav-box .icon-logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* HOVER STATE: Angat at Kulay */
+.nav-3d-btn:hover .nav-box {
+    /* Taas ng lipad (translateZ) at abante (translateY) */
+    transform: rotateX(55deg) rotateZ(45deg) translateZ(60px) translateY(-10px);
+    background: #7c6fd6; /* Violet hover gaya ng menu */
+    box-shadow: 0 30px 50px rgba(0,0,0,0.2);
+}
+
+/* Tooltip (Flat Look - Pinagitna) */
+.nav-3d-btn .tooltip {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the text */
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.nav-3d-btn:hover .tooltip {
+    opacity: 1;
+    bottom: -60px; /* Kaunting gap pag nag-hover */
 }
