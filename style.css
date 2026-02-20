@@ -844,7 +844,7 @@ project-bg-image1 {
         justify-items: center;
         padding-bottom: 60px;
     }
-    
+
     .icon-3d {
         width: 80px;
         height: 80px;
@@ -890,5 +890,4 @@ project-bg-image1 {
     /* Panatilihin ang counter-rotate para diretso ang text */
     transform: rotateZ(-45deg) rotateX(-40deg) translateY(0);
 }
-
 
