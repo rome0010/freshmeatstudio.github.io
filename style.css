@@ -748,7 +748,7 @@ project-bg-image1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     perspective: 1500px;
     padding: 10px 0 100px 0;
     
@@ -890,4 +890,5 @@ project-bg-image1 {
     /* Panatilihin ang counter-rotate para diretso ang text */
     transform: rotateZ(-45deg) rotateX(-40deg) translateY(0);
 }
+
 
