@@ -604,6 +604,21 @@ h1 { font-size: 36px; margin-bottom: 30px; color: #0d3320; text-shadow: 2px 2px 
         border: none;
         outline: none;
     }
+        .company-card {
+        flex-direction: column;
+    }
+
+    .company-card img.card-img-small {
+        width: 100%;
+    }
+
+    .company-content {
+        text-align: center;
+    }
+
+    .company-video {
+        margin-top: 15px;
+    }
 }
 @media (max-width: 480px) {
     .header { padding: 12px 15px; }
